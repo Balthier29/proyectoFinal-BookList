@@ -1,0 +1,114 @@
+:root {
+
+    /* Marca */
+    --color-primario: #1D4ED8;
+    --color-primario-hover: #1E40AF;
+    --color-acento: #F97355;
+    --color-acento-fuerte: #EA580C;
+    --color-acento-hover: #C2410C;
+
+    /* texto y superficie */
+    --color-texto: #1A2332;
+    --color-texto-suave: #52607A;
+    --color-texto-tenue: #8A94A3;
+    --color-borde: #E2E8F0;
+    --color-fondo: #F7F8FA;
+    --color-superficie: #FFFFFF;
+    --color-superficie-alt: #FAFBFC;
+    --color-destacado-texto: #7C2D12;
+
+    /* Estados semánticos (éxito / advertencia / info / peligro) */
+    --color-exito: #16A34A;
+    --color-exito-bg: #DCFCE7;
+    --color-advertencia: #B45309;
+    --color-advertencia-bg: #FEF3C7;
+    --color-info: #0369A1;
+    --color-info-bg: #E0F2FE;
+    --color-peligro: #A33D3D;
+    --color-peligro-bg: #F5E2E2;
+
+    /* Espaciado */
+    --espacio-2xs: 4px;
+    --espacio-xs: 8px;
+    --espacio-sm: 12px;
+    --espacio-md: 20px;
+    --espacio-lg: 28px;
+    --espacio-xl: 40px;
+    --espacio-2xl: 56px;
+
+    /* Bordes redondeados */
+    --radio-sm: 6px;
+    --radio-md: 8px;
+    --radio-lg: 12px;
+    --radio-xl: 16px;
+    --radio-pill: 999px;
+
+    /* Tipografía */
+    --fuente-titulo: 'Georgia', serif;
+    --fuente-texto: 'Segoe UI', system-ui, sans-serif;
+
+    /* Layout */
+    --ancho-maximo: 1100px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--fuente-texto);
+    color: var(--color-texto);
+}
+
+.contenedor {
+    max-width: var(--ancho-maximo);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* modelo responsivo */
+
+@media (max-width: 900px) {
+    .contenedor {
+        padding: 0 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedor {
+        padding: 0 12px;
+    }
+}
+
+/*  Modo oscuro  */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-texto: #E2E8F0;
+    --color-texto-suave: #A1ACC2;
+    --color-texto-tenue: #7C879E;
+    --color-borde: #334155;
+    --color-fondo: #0F172A;
+    --color-superficie: #1E293B;
+    --color-superficie-alt: #182338;
+    --color-texto-sobre-primario: #CBD9FB;
+    --color-texto-sobre-primario-tenue: #A8C0F5;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-texto: #E2E8F0;
+  --color-texto-suave: #A1ACC2;
+  --color-texto-tenue: #7C879E;
+  --color-borde: #334155;
+  --color-fondo: #0F172A;
+  --color-superficie: #1E293B;
+  --color-superficie-alt: #182338;
+  --color-texto-sobre-primario: #CBD9FB;
+  --color-texto-sobre-primario-tenue: #A8C0F5;
+}
+
+body {
+  background-color: var(--color-fondo);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

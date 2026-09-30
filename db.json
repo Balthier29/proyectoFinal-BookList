@@ -1,0 +1,91 @@
+{
+  "libros": [
+    {
+      "id": "1",
+      "titulo": "Cien años de soledad",
+      "autor": "Gabriel García Márquez",
+      "categoria": "Novela",
+      "estado": "Publicado",
+      "descripcion": "",
+      "imagen": "/img/cienAnoSoledad.webp",
+      "publicado": true,
+      "prioritario": false
+    },
+    {
+      "id": "3",
+      "titulo": "El principito",
+      "autor": "Antoine de Saint-Exupéry",
+      "categoria": "Literatura infantil",
+      "estado": "Publicado",
+      "descripcion": "",
+      "imagen": "/img/elPrincipito.webp",
+      "publicado": true,
+      "prioritario": false
+    },
+    {
+      "id": "4",
+      "titulo": "Orgullo y prejuicio",
+      "autor": "Jane Austen",
+      "categoria": "Novela",
+      "estado": "Publicado",
+      "descripcion": "",
+      "imagen": "/img/orgulloYPrejuicio.webp",
+      "publicado": true,
+      "prioritario": false
+    },
+    {
+      "id": "5",
+      "titulo": "El hobbit",
+      "autor": "J.R.R. Tolkien",
+      "categoria": "Fantasía",
+      "estado": "Publicado",
+      "descripcion": "",
+      "imagen": "/img/ElHobbit.webp",
+      "publicado": true,
+      "prioritario": false
+    },
+    {
+      "titulo": "1984",
+      "autor": "George Orwell",
+      "categoria": "Ciencia Ficción",
+      "descripcion": "",
+      "estado": "Publicado",
+      "id": "O8KgwBOZG7A",
+      "publicado": true,
+      "prioritario": false
+    },
+    {
+      "titulo": "el alquimista",
+      "autor": "paolo cohelo",
+      "categoria": "Fantasía",
+      "descripcion": "en busqueda de un sueño",
+      "estado": "En edición",
+      "id": "cVdaOgVtxfM",
+      "publicado": true,
+      "prioritario": false
+    }
+  ],
+  "usuarios": [
+    {
+      "nombre": "davis",
+      "correo": "davis.vicencio10@gmail.com",
+      "id": "byl0oWDDxQ0"
+    },
+    {
+      "nombre": "davis",
+      "correo": "davis.vicencio10@gmail.com",
+      "id": "R3pgYqOrApA"
+    },
+    {
+      "nombre": "das",
+      "correo": "dacvds@g.com",
+      "id": "X4WNJOpbulA"
+    },
+    {
+      "nombre": "davis",
+      "correo": "davis.vicencio10@gmail.com",
+      "id": "lfZH9_0FoLI"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
