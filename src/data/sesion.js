@@ -1,9 +1,15 @@
 import { reactive } from 'vue'
 
-
 function cargarUsuario() {
-    const guardado = localStorage.getItem('token')
-    return guardado ? JSON.parse(guardado) : null
+  const guardado = localStorage.getItem('token')
+  if (!guardado) return null
+
+  try {
+    return JSON.parse(guardado)
+  } catch {
+    localStorage.removeItem('token')
+    return null
+  }
 }
 
 export const sesion = reactive({
@@ -11,7 +17,6 @@ export const sesion = reactive({
 })
 
 export function iniciarSesion(usuario) {
-  
   if (!usuario) return false
 
   sesion.usuario = usuario
